@@ -177,3 +177,22 @@ body{
         margin-bottom: 50px;
     }
 }
+/* Extansion area CSS */
+.extansion-area{
+    padding: 140px 0;
+    background-color: #043873;
+}
+.extansion-area .theme-text h3{
+    color: #fff;
+}
+.extansion-area .theme-text p{
+    color: #fff;
+}
+@media ( max-width: 991px) {
+    .extansion-area{
+        padding: 80px 0;
+    }
+    .extansion-area .theme-button{
+        margin-bottom: 50px;
+    }
+}
