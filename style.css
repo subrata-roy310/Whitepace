@@ -264,3 +264,15 @@ body{
     }
 
 }
+/* Your work area CSS */
+.work-area{
+    padding: 140px 0;
+    background-color: #043873;
+    
+}
+.work-area .theme-text h3{
+    color: #fff;
+}
+.work-area .theme-text p{
+    color: #fff;
+}
