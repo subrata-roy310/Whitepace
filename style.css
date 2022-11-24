@@ -276,3 +276,7 @@ body{
 .work-area .theme-text p{
     color: #fff;
 }
+/* task-area SS */
+.task-area{
+    padding: 140px 0;
+}
