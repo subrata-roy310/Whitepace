@@ -34,6 +34,16 @@ body{
     color: #043873 !important;
     
 }
+.theme-button-three{
+    display: inline-block;
+    background: #fff;
+    border: 1px solid #FFE492;
+    border-radius: 8px;
+    padding: 16px 24px !important;
+    color: #043873 !important;
+    text-decoration: none;
+    
+}
 .theme-button img{
     margin-left: 10px;
 }
@@ -103,6 +113,7 @@ body{
         margin-left: 0px;
         margin-top: 15px;
     }
+    
     .header-area .nav-link{
       
         padding: 16px 0px !important;
@@ -195,4 +206,61 @@ body{
     .extansion-area .theme-button{
         margin-bottom: 50px;
     }
+}
+
+/* Customise Area CSS */
+.customise-area{
+    padding: 140px 0;
+}
+@media ( max-width: 991px){
+    .customise-area{
+        padding: 80px 0;
+    }
+}
+/* Pricing Area CSS */
+.pricing-area{
+    padding: 140px 0;
+}
+.single-pricing{
+    border: 1px solid #FFE492;
+    border-radius: 10px;
+    padding: 40px 44px;
+}
+.single-pricing h4{
+    font-size: 24px;
+    font-weight: 600;
+}
+.single-pricing h2{
+    font-size: 36px;
+    font-weight: 700;
+    margin: 20px 0;
+}
+.single-pricing ul {
+    margin: 0;
+    padding: 0;
+    margin: 25px 0;
+}
+.single-pricing ul li{
+    list-style: none;
+    margin-bottom: 28px;
+}
+.single-pricing ul li:last-child{
+    margin: 0;
+}
+.special-pricing {
+    padding: 80px 44px;
+    background-color: #043873;
+    color: #fff;
+}
+.special-pricing h2{
+    color: #FFE492;
+}
+@media ( max-width: 991px){
+    .pricing-area {
+        padding: 80px 0px;
+    }
+    .single-pricing{
+        margin-bottom: 30px;
+    }
+
 }
