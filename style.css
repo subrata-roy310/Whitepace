@@ -310,3 +310,25 @@ body{
             margin-bottom: 50px;
         }
 }
+/* App area */
+.app-area{
+    padding:140px 0;
+    background-color: #043873;
+    background-image: url(img/element-3.png);
+    background-size: cover;
+    background-position: center;
+}
+.app-area .theme-text h3{
+    color: #fff;
+}
+.app-area .theme-text p{
+    color: #fff;
+}
+@media ( max-width: 991px){
+    .app-area{
+        padding: 80px 0;
+    }
+    .app-image{
+        margin-bottom: 50px;
+    }
+}
