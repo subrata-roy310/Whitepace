@@ -44,7 +44,7 @@ body{
     text-decoration: none;
     
 }
-.theme-button img{
+.theme-button i {
     margin-left: 10px;
 }
 .theme-text h3{
@@ -71,14 +71,7 @@ body{
 .theme-text p{
      color: #212529;
 }
-@media ( max-width: 991px) {
-    .theme-text{
-        text-align: center;
-    }
-    .theme-text h3{
-        font-size: 36px;
-    }
-}
+
 /* Header CSS */
 .header-area{
     background-color: #043873;
@@ -100,34 +93,7 @@ body{
     border: none;
     box-shadow: none;
 }
-@media ( max-width: 991px) {
-    .theme-button{
-      width: 100%;
-      text-align: center;
-      margin-left:0;
-      margin-top: 15px;
-    }
-    .theme-button-two{
-        width: 100%;
-       text-align: center;
-        margin-left: 0px;
-        margin-top: 15px;
-    }
-    
-    .header-area .nav-link{
-      
-        padding: 16px 0px !important;
-    }
-    .header-area .nav-link{
-        position: relative;
-    }
-    .header-area .nav-link::after{
-        position: absolute;
-        right: 12px;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-}
+
 /* Hero CSS */
 .hero-area{
     padding: 140px 0;
@@ -147,26 +113,7 @@ body{
 .hero-area .theme-button{
     margin-top: 30px;
 }
-@media ( max-width: 991px) {
-    .hero-area{
-        padding: 80px 0;
-    }
-   .hero-text{
-    text-align: center;
-   }
-   .hero-text h3{
-    font-size: 36px;
-   }
-   .hero-area .theme-button{
-    margin-bottom: 50px;
-   }
-   .header-area .theme-button{
-    margin-left: 0px;
-   }
-    .header-area .theme-button-two{
-     margin-left: 0px;
-    }
-}
+
 
 /* management area */
 .management-area{
@@ -176,22 +123,22 @@ body{
 .work-management{
     margin-top: 100px;
 }
-@media ( max-width: 991px){
-    .management-area{
-        
-        padding: 80px 0;
-    }
-    .work-management{
-        margin-top: 60px;
-    }
-    .management-area .theme-button{
-        margin-bottom: 50px;
-    }
+.work-management .theme-text h3 span::after{
+    background-image: url(img/w-element.png);
+    background-size: contain;
+    background-position: bottom;
 }
+
 /* Extansion area CSS */
 .extansion-area{
     padding: 140px 0;
     background-color: #043873;
+}
+.extansion-area .theme-text h3 span::after{
+    background-image: url(img/ex-element.png);
+    background-size: contain;
+    background-position: bottom;
+    top: 40px;
 }
 .extansion-area .theme-text h3{
     color: #fff;
@@ -199,24 +146,13 @@ body{
 .extansion-area .theme-text p{
     color: #fff;
 }
-@media ( max-width: 991px) {
-    .extansion-area{
-        padding: 80px 0;
-    }
-    .extansion-area .theme-button{
-        margin-bottom: 50px;
-    }
-}
+
 
 /* Customise Area CSS */
 .customise-area{
     padding: 140px 0;
 }
-@media ( max-width: 991px){
-    .customise-area{
-        padding: 80px 0;
-    }
-}
+
 /* Pricing Area CSS */
 .pricing-area{
     padding: 140px 0;
@@ -243,9 +179,20 @@ body{
 .single-pricing ul li{
     list-style: none;
     margin-bottom: 28px;
+    display: flex;
+    align-items: center;
 }
 .single-pricing ul li:last-child{
     margin: 0;
+}
+.single-pricing img{
+    height: 21px !important;
+    width: 21px !important;
+    margin-right: 10px;
+}
+.pricing-area .owl-stage {
+    display: flex;
+    align-items: center;
 }
 .special-pricing {
     padding: 80px 44px;
@@ -255,15 +202,21 @@ body{
 .special-pricing h2{
     color: #FFE492;
 }
-@media ( max-width: 991px){
-    .pricing-area {
-        padding: 80px 0px;
-    }
-    .single-pricing{
-        margin-bottom: 30px;
-    }
-
+.pricing-area .owl-dots{
+    text-align: center;
 }
+.pricing-area .owl-dots button{
+    height: 15px;
+    width: 15px;
+    background-color: #4f9cf9 !important;
+    border-radius: 50%;
+    margin: 0 5px;
+    
+}
+.pricing-area .owl-dots button.active{
+    background-color: #043873 !important;
+}
+
 /* Your work area CSS */
 .work-area{
     padding: 140px 0;
@@ -276,20 +229,12 @@ body{
 .work-area .theme-text p{
     color: #fff;
 }
-@media ( max-width: 991px){
-    .work-area{
-        padding: 80px 0;
-        }
-}
+
 /* task-area SS */
 .task-area{
     padding: 140px 0;
 }
-@media ( max-width: 991px){
-    .task-area{
-        padding: 80px 0;
-        }
-}
+
 /* sponsors-area CSS */
 .sponsors-area{
     padding: 140px 0;
@@ -301,15 +246,7 @@ body{
     height: 55px;
     width: auto;
 }
-@media ( max-width: 991px){
-    .sponsors-area{
-        padding-top: 80px;
-        padding-bottom: 30px;
-        }
-        .single-sponsors{
-            margin-bottom: 50px;
-        }
-}
+
 /* App area */
 .app-area{
     padding:140px 0;
@@ -324,14 +261,7 @@ body{
 .app-area .theme-text p{
     color: #fff;
 }
-@media ( max-width: 991px){
-    .app-area{
-        padding: 80px 0;
-    }
-    .app-image{
-        margin-bottom: 50px;
-    }
-}
+
  /* Testimonial area */
  .testimonial-area{
     padding: 140px 0;
@@ -342,6 +272,13 @@ body{
     box-shadow: 15px 10px 50px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     padding: 50px 30px;
+    transition: 0.3s;
+    color: #fff;
+ }
+ .single-tastimonial:hover{
+    background-color: #fff;
+    color: #212529;
+    cursor: pointer;
  }
  .testimonial-area .theme-text{
     margin-bottom: 50px;
@@ -350,14 +287,13 @@ body{
     border-bottom: 1px solid #fff;
    
  }
- .tastimonial-text img{
-    margin-bottom: 40px;
-    height: 60px;
-    width: auto !important;
+ .tastimonial-text i{
+   font-size: 60px;
+   
  }
  .tastimonial-text p{
     margin-bottom: 25px;
-    color: #fff;
+    
  }
  .tastimonial-author{
     margin-top: 40px;
@@ -372,7 +308,7 @@ body{
  }
  .author-text p{
     margin-bottom: 0;
-    color: #fff;
+    
  }
  .testimonial-area .owl-dots{
     text-align: center;
@@ -388,11 +324,7 @@ body{
 .testimonial-area .owl-dots button.active{
     background-color: #043873 !important;
 }
-@media ( max-width: 991px) {
-    .testimonial-area{
-        padding: 80px 0;
-    }
-}
+
 /* trial area */
 .trial-area{
     padding: 140px 0;
@@ -415,29 +347,12 @@ body{
 .trial-img a{
     margin: 0 20px;
 }
-@media ( max-width: 991px) {
-    .trial-area{
-        padding: 80px 0;
-        
-    }
-    .trial-text h3{
-        font-size: 36px;
-        
-    }
-    .trial-text p{
-        font-size: 18px;
-        
-    }
-    .trial-img a{
-        margin: 0;
-        margin-right: 40px;
-    }
-}
+
 /* Footer area CSS */
 .footer-area{
     background-color: #043873;
     padding-top: 140px;
-    border: 1px solid #4f9cf9;
+    border: 1px solid #2E4E73;
 }
 .footer-top{
     padding-bottom: 60px;
@@ -510,7 +425,155 @@ body{
     display: inline-block;
     margin-left: 32px;
 }
+
+@media ( max-width: 1399px) {
+    .header-area{
+        font-size: 16px;
+    }
+
+}
+@media ( max-width: 1199px) {
+    .header-area{
+        font-size: 14px;
+    }
+    .header-area .nav-link {
+        padding: 10px 16px !important;
+    }
+
+}
+
 @media ( max-width: 991px) {
+    /* Defol CSS */
+    .theme-text{
+        text-align: center;
+    }
+    .theme-text h3{
+        font-size: 36px;
+    }
+    .header-area{
+        font-size: 18px;
+    }
+    /* Header CSS  */
+    .theme-button{
+        width: 100%;
+        text-align: center;
+        margin-left:0;
+        margin-top: 15px;
+      }
+      .theme-button-two{
+          width: 100%;
+         text-align: center;
+          margin-left: 0px;
+          margin-top: 15px;
+      }
+      
+      .header-area .nav-link{
+        
+          padding: 16px 0px !important;
+      }
+      .header-area .nav-link{
+          position: relative;
+      }
+      .header-area .nav-link::after{
+          position: absolute;
+          right: 12px;
+          top: 50%;
+          transform: translateY(-50%);
+      }
+      /* Hero CSS */
+      .hero-area{
+        padding: 80px 0;
+    }
+   .hero-text{
+    text-align: center;
+   }
+   .hero-text h3{
+    font-size: 36px;
+   }
+   .hero-area .theme-button{
+    margin-bottom: 50px;
+   }
+   .header-area .theme-button{
+    margin-left: 0px;
+   }
+    .header-area .theme-button-two{
+     margin-left: 0px;
+    }
+    /* Managemant CSS */
+    .management-area{
+        
+        padding: 80px 0;
+    }
+    .work-management{
+        margin-top: 60px;
+    }
+    .management-area .theme-button{
+        margin-bottom: 50px;
+    }
+    /* Extansion CSS */
+    .extansion-area{
+        padding: 80px 0;
+    }
+    .extansion-area .theme-button{
+        margin-bottom: 50px;
+    }
+    /* customise area CSS */
+    .customise-area{
+        padding: 80px 0;
+    }
+     /* pricing area CSS */
+    .pricing-area {
+        padding: 80px 0px;
+    }
+    .single-pricing{
+        margin-bottom: 30px;
+    }
+     /* work area CSS */
+    .work-area{
+        padding: 80px 0;
+        }
+    /* task area CSS */
+    .task-area{
+            padding: 80px 0;
+            } 
+    /* sponsors CSS */
+   .sponsors-area{
+                padding-top: 80px;
+                padding-bottom: 30px;
+                }
+                .single-sponsors{
+                    margin-bottom: 50px;
+    }
+    /* app aarea CSS */
+    .app-area{
+        padding: 80px 0;
+    }
+    .app-image{
+        margin-bottom: 50px;
+    }
+    /* testimonial CSS */
+    .testimonial-area{
+        padding: 80px 0;
+    }
+    /* Trial area css */
+
+    .trial-area{
+        padding: 80px 0;
+        
+    }
+    .trial-text h3{
+        font-size: 36px;
+        
+    }
+    .trial-text p{
+        font-size: 18px;
+        
+    }
+    .trial-img a{
+        margin: 0;
+        margin-right: 40px;
+    }
+    /* Footer area */
     .footer-top{
         text-align: center;
     }
